@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  web:
+    image: sanidhya006/project2:v1
+    ports:
+      - "8080:80"
+
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_DATABASE: demo
